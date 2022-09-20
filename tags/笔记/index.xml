@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>笔记 - Tag - 我的全新 Hugo 网站</title>
+        <title>笔记 - Tag - Alex D.</title>
         <link>http://example.org/tags/%E7%AC%94%E8%AE%B0/</link>
-        <description>笔记 - Tag - 我的全新 Hugo 网站</description>
+        <description>笔记 - Tag - Alex D.</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 18 Sep 2022 15:51:04 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/%E7%AC%94%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
     <title>水的化学</title>
     <link>http://example.org/%E6%B0%B4%E7%9A%84%E5%8C%96%E5%AD%A6/</link>
