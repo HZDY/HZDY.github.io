@@ -1,9 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - Alex D.</title>
-        <link>http://example.org/posts/</link>
-        <description>All Posts | Alex D.</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 21 Sep 2022 16:43:16 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+        <title>整理 - Tag - Alex D.</title>
+        <link>http://example.org/tags/%E6%95%B4%E7%90%86/</link>
+        <description>整理 - Tag - Alex D.</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 21 Sep 2022 16:43:16 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/%E6%95%B4%E7%90%86/" rel="self" type="application/rss+xml" /><item>
     <title>极限与连续</title>
     <link>http://example.org/%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD/</link>
     <pubDate>Wed, 21 Sep 2022 16:43:16 &#43;0800</pubDate>

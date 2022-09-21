@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>极限与连续 - Alex D.</title><meta name="Description" content="一些属于自己的文章"><meta property="og:title" content="极限与连续" />
+<meta property="og:description" content="极限与连续 法力无边的CJ的五个金手指 画画图、挖掘隐含条件、必要条件探路、正难则反、变结构 极限: $$ \text{we say} \lim_{x \to c}f(x) = L\quad \text { if},\quad \forall \epsilon&gt;0, \quad \exists \delta&gt;0 \ s.t. \newline \lvert f(x) - L" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-21T16:43:16+08:00" />
+<meta property="article:modified_time" content="2022-09-21T16:43:16+08:00" /><meta property="og:site_name" content="DY&#39;s notes(under construction)" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="极限与连续"/>
+<meta name="twitter:description" content="极限与连续 法力无边的CJ的五个金手指 画画图、挖掘隐含条件、必要条件探路、正难则反、变结构 极限: $$ \text{we say} \lim_{x \to c}f(x) = L\quad \text { if},\quad \forall \epsilon&gt;0, \quad \exists \delta&gt;0 \ s.t. \newline \lvert f(x) - L"/>
+<meta name="application-name" content="Alex D.&#39;s Notes">
+<meta name="apple-mobile-web-app-title" content="Alex D.&#39;s Notes"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "极限与连续",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD\/"
+        },"genre": "posts","keywords": "数学, 极限, 整理","wordcount":  1480 ,
+        "url": "http:\/\/example.org\/%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD\/","datePublished": "2022-09-21T16:43:16+08:00","dateModified": "2022-09-21T16:43:16+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "AlexD."
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Alex D.">Alex D.</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="/friend/"> 友情链接 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Alex D.">Alex D.</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="/friend/" title="">友情链接</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">极限与连续</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="hzdy.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>AlexD.</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>数学笔记</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-21">2022-09-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1480 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#恒等变形">恒等变形</a>
+      <ul>
+        <li><a href="#处理次数的因式分解">处理次数的因式分解</a></li>
+        <li><a href="#有理化">有理化</a></li>
+        <li><a href="#拆分分子">拆分分子</a></li>
+        <li><a href="#绝对值三角不等式">（绝对值）三角不等式</a></li>
+        <li><a href="#加一项减一项">加一项减一项</a></li>
+      </ul>
+    </li>
+    <li><a href="#放缩">放缩</a>
+      <ul>
+        <li><a href="#做限制">做限制</a></li>
+        <li><a href="#二项式定理">二项式定理</a></li>
+      </ul>
+    </li>
+    <li><a href="#定义的使用">定义的使用</a></li>
+    <li><a href="#常见可用定理">常见可用定理</a></li>
+    <li><a href="#小技巧">小技巧</a>
+      <ul>
+        <li><a href="#避免分母为0">避免分母为0</a></li>
+        <li><a href="#不明显的有理化">不明显的有理化</a></li>
+        <li><a href="#求极限时的变形">求极限时的变形</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="极限与连续">极限与连续</h1>
+<blockquote>
+<p>法力无边的CJ的五个金手指</p>
+<p>画画图、挖掘隐含条件、必要条件探路、<strong>正难则反</strong>、<strong>变结构</strong></p>
+</blockquote>
+<p>极限:
+$$
+\text{we say} \lim_{x \to c}f(x) = L\quad \text { if},\quad \forall \epsilon&gt;0, \quad \exists \delta&gt;0 \  s.t.
+\newline \lvert f(x) - L \rvert &lt; \delta \quad \text{  whenever  } \quad 0&lt; \lvert x-c\rvert&lt;\delta
+$$
+连续：
+$$
+\text{we say f is continuous at c} \quad \text {if},\quad \forall \epsilon&gt;0, \quad \exists \delta&gt;0 \  s.t.
+\newline \lvert f(x) - L \rvert &lt; \delta \quad \text{  whenever  } \quad  \lvert x-c\rvert&lt;\delta
+$$
+有几个地方需要特别整理：</p>
+<ul>
+<li>
+<p>恒等变形</p>
+</li>
+<li>
+<p>放缩</p>
+</li>
+<li>
+<p>定义的使用</p>
+<ul>
+<li>取$\epsilon$</li>
+<li>取$\delta$</li>
+<li>反证法</li>
+</ul>
+</li>
+<li>
+<p>常见的可以使用的定理</p>
+</li>
+<li>
+<p>小技巧</p>
+</li>
+</ul>
+<p>在极限与连续的相关题目中我们常用的几个方法：</p>
+<p><strong>正难则反、变结构</strong>，以及非常重要的<strong>定义的使用</strong></p>
+<h2 id="恒等变形">恒等变形</h2>
+<h3 id="处理次数的因式分解">处理次数的因式分解</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://s2.loli.net/2022/09/21/vOEAnoQ5Baksd62.png"
+        data-srcset="https://s2.loli.net/2022/09/21/vOEAnoQ5Baksd62.png, https://s2.loli.net/2022/09/21/vOEAnoQ5Baksd62.png 1.5x, https://s2.loli.net/2022/09/21/vOEAnoQ5Baksd62.png 2x"
+        data-sizes="auto"
+        alt="https://s2.loli.net/2022/09/21/vOEAnoQ5Baksd62.png"
+        title="image-20220921151728178" /></p>
+<p>在此基础上，我们可以配合其他的因式分解技巧，我们也可以通过改变次数达到目标的效果。
+$$
+a=a^{n\times \frac1n}=a^{2\times\frac12}
+$$
+前一部分可以用来抵消一些根号项，后一部分可以实现偶数次方的次方和因式分解。</p>
+<h3 id="有理化">有理化</h3>
+<p>$$
+\frac{1}{\sqrt{a}+\sqrt{b}} = \frac{\sqrt{a}-\sqrt{b}}{a-b}
+$$</p>
+<p>可以是分子有理化也可以是分母有理化，根本目标是通过平方差公式来调整可以消掉的项。
+有理化不追求一步到位，而是追求<strong>改变结构</strong>，也许是让一小部分<strong>可以约分</strong>，下面举一个例子：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://s2.loli.net/2022/09/21/8dNchHbGuI2CJ6o.png"
+        data-srcset="https://s2.loli.net/2022/09/21/8dNchHbGuI2CJ6o.png, https://s2.loli.net/2022/09/21/8dNchHbGuI2CJ6o.png 1.5x, https://s2.loli.net/2022/09/21/8dNchHbGuI2CJ6o.png 2x"
+        data-sizes="auto"
+        alt="https://s2.loli.net/2022/09/21/8dNchHbGuI2CJ6o.png"
+        title="image-20220921152958358" /></p>
+<p>这里的有理化操作并没有非常有理化，但是有理化了一部分之后我们起到了约分的作用，非常的amazing。</p>
+<h3 id="拆分分子">拆分分子</h3>
+<p>$$
+\frac{a+b}{c} = \frac{a}{c}+\frac{b}{c}
+$$</p>
+<p>上面那一例“部分有理化也可以用这种方式解决（步骤多了几步，但是无伤大雅——自己最早想到的方法就是最好的）</p>
+<h3 id="绝对值三角不等式">（绝对值）三角不等式</h3>
+<p>$$
+\lvert \lvert a \rvert - \lvert b\rvert \rvert \le \lvert a+b \rvert \le \lvert a\rvert + \lvert b\rvert
+$$</p>
+<p>大部分带绝对值的证明都可以用到。例子见“做限制”</p>
+<h3 id="加一项减一项">加一项减一项</h3>
+<p>和定义、放缩一起使用，目标是把条件集中。例子见“做限制”</p>
+<h2 id="放缩">放缩</h2>
+<div class="details admonition tip">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>关于“区间放缩”<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>区间放缩在这里常常出现。</p>
+<p>所谓区间放缩，指通过自变量/函数的有界性来代入边界放缩。
+使用这种放缩通常不在意等号能否取到（因为等号基本上取不到），而只在意找到一个<strong>充分条件</strong></p>
+<p><strong>在大部分证明极限时，我们需要的只是一个充分条件！</strong></p>
+<p>用值域放缩可以参考这个例子</p>
+ <img src="https://s2.loli.net/2022/09/20/2sBdIo4Qr6KiuW5.png" alt="image-20220916194944344" style="zoom:33%;" />
+</div>
+        </div>
+    </div>
+<h3 id="做限制">做限制</h3>
+<p>对于$\lim_{x \to c}f(x) = L$，所做的限制常常在$\displaystyle \lvert x - c \rvert$，并且在后续的放缩中一般不会把含有这个结构的东西全部放掉。我们最终的目标是只留下（并且解出）$\displaystyle \lvert x - c \rvert$的范围，我们要放掉的是（几乎）所有不含邮它的部分。下面来几个例子。</p>
+<p>1、证明一个极限</p>
+<img src="https://s2.loli.net/2022/09/20/dmTxE4n7ler53yQ.png" alt="image-20220914231443555" style="zoom:50%;" />
+<p>delta取两者之间的最小值是做限制的精髓。
+做限制时你内心的想法：一般来说epsilon非常小。对于小于5的来说，限制成立；对于大于5的来说，取1就足够了。我们只需要一个必要条件。</p>
+<p>2、证明极限运算的乘法法则</p>
+<img src="https://s2.loli.net/2022/09/21/NBewlAIxZ8MTqDS.png" alt="image-20220921154801724" style="zoom:67%;" />
+<p>非常的有技巧啊，不得不加上一些说明：</p>
+<ul>
+<li>加一项减一项，将相关的部分<sup> 也就是x和x0，f（x）和L</sup> 联系到一起，让定义可以使用。</li>
+<li>其实这个make restriction和我们所说的不一样，其实是给$\epsilon$取了特定的值</li>
+</ul>
+<h3 id="二项式定理">二项式定理</h3>
+<p>二项式展开之后，你有两种选择</p>
+<ul>
+<li>把所有项变成最大/最小的往里代</li>
+<li>忽略不要的项</li>
+</ul>
+<img src="https://s2.loli.net/2022/09/20/MWDYP8g4LtvKjiV.png" alt="image-20220915180204506" style="zoom: 50%;" />
+<p>上面这个例子其实是做完了限制然后把所有东西往大里放，也就是第一种类型。</p>
+<p>下面来一个“忽略不要的项”</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://s2.loli.net/2022/09/21/jXZahelME2UcdN5.png"
+        data-srcset="https://s2.loli.net/2022/09/21/jXZahelME2UcdN5.png, https://s2.loli.net/2022/09/21/jXZahelME2UcdN5.png 1.5x, https://s2.loli.net/2022/09/21/jXZahelME2UcdN5.png 2x"
+        data-sizes="auto"
+        alt="https://s2.loli.net/2022/09/21/jXZahelME2UcdN5.png"
+        title="image-20220921161511046" /></p>
+<p>这里保留二次项是因为你想用两边夹的方法证极限。
+这个不是最经典的放缩。最经典的是$(1+x)^n \geq 1+nx \quad(x&gt;-1)$，实际上使用更为广泛。</p>
+<p>将指数往下放我们也可以用这个式子。（n是整数，a大于1）
+$$
+a^x=(1+b)^x \ge (1+b^n) \ge nb \ge (x-1)b
+$$</p>
+<h2 id="定义的使用">定义的使用</h2>
+<h2 id="常见可用定理">常见可用定理</h2>
+<h2 id="小技巧">小技巧</h2>
+<h3 id="避免分母为0">避免分母为0</h3>
+<p>我们只要找一个必要条件。通过加一避免分母为0.在证明乘法法则中有使用到。
+$$
+\displaystyle \lvert L\rvert \cdot x &lt;\lvert t\rvert \Leftarrow x &lt; \frac{\lvert t\rvert}{\lvert L\rvert + 1}
+$$</p>
+<h3 id="不明显的有理化">不明显的有理化</h3>
+<p>看到根号想到有理化。哪怕根号下的已经足够繁杂。</p>
+<p>$用\epsilon - \delta语言 证明 \displaystyle \lim_{x \to 1} \sqrt{\frac{7}{16x^2-9}}=1$</p>
+<img src="https://s2.loli.net/2022/09/20/CUeAnyB9iuxkPjF.png" alt="image-20220917151006027" style="zoom:50%;" />
+<h3 id="求极限时的变形">求极限时的变形</h3>
+<p>与无限有关的极限：分子分母同时除以最高次</p>
+<img src="https://s2.loli.net/2022/09/21/TcYf2GK4UyaMdn5.png" alt="image-20220921162534463" style="zoom:50%;" />
+<p>极限的运算可以添拆项来简化运算。</p>
+<img src="https://s2.loli.net/2022/09/21/vXGTUmndpF5O4ry.jpg" alt="IMG_0541" style="zoom:33%;" />
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-09-21</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD/" data-title="极限与连续" data-via="xxxx" data-hashtags="数学,极限,整理"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD/" data-hashtag="数学"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://example.org/%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD/" data-title="极限与连续"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://example.org/%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD/" data-title="极限与连续"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://example.org/%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD/" data-title="极限与连续"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%95%B0%E5%AD%A6/">数学</a>,&nbsp;<a href="/tags/%E6%9E%81%E9%99%90/">极限</a>,&nbsp;<a href="/tags/%E6%95%B4%E7%90%86/">整理</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="hzdy.github.io" target="_blank">Alex D.</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":15,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
