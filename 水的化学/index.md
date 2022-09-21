@@ -1,6 +1,12 @@
 # 水的化学
 
 
+
+
+
+# 水的化学
+
+
 # 水的化学
 
 > 以通过考试为目的，因为我的未来和我的化学无关。
@@ -109,4 +115,5 @@
 - Hund's rule:
   - For degenerate orbitals, the lowest energy state is attained when the number of electrons having the same spin is maximized.
   - The rule: filling up of the orbitals is dependent on orbital energy while removal of electrons from orbitals is dependent on orbital location.
+
 

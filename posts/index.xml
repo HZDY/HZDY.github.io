@@ -11,5 +11,13 @@
     <guid>http://example.org/%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD/</guid>
     <description><![CDATA[极限与连续 法力无边的CJ的五个金手指 画画图、挖掘隐含条件、必要条件探路、正难则反、变结构 极限: $$ \text{we say} \lim_{x \to c}f(x) = L\quad \text { if},\quad \forall \epsilon&gt;0, \quad \exists \delta&gt;0 \ s.t. \newline \lvert f(x) - L]]></description>
 </item>
+<item>
+    <title>水的化学</title>
+    <link>http://example.org/%E6%B0%B4%E7%9A%84%E5%8C%96%E5%AD%A6/</link>
+    <pubDate>Tue, 20 Sep 2022 17:10:50 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://example.org/%E6%B0%B4%E7%9A%84%E5%8C%96%E5%AD%A6/</guid>
+    <description><![CDATA[水的化学 水的化学 以通过考试为目的，因为我的未来和我的化学无关。 我不喜欢无意义的中英文混杂。但是因为我的未来与化学无关，所以去他丫的。 第六章 原]]></description>
+</item>
 </channel>
 </rss>
