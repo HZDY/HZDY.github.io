@@ -48,6 +48,8 @@ a=a^{n\times \frac1n}=a^{2\times\frac12}
 $$
 前一部分可以用来抵消一些根号项，后一部分可以实现偶数次方的次方和因式分解。
 
+同时注意，这个公式逆用可以升次（root rule证明过程）
+
 ### 有理化
 
 $$
@@ -68,16 +70,6 @@ $$
 $$
 
 上面那一例“部分有理化也可以用这种方式解决（步骤多了几步，但是无伤大雅——自己最早想到的方法就是最好的）
-
-### （绝对值）三角不等式
-
-$$
-\lvert \lvert a \rvert - \lvert b\rvert \rvert \le \lvert a+b \rvert \le \lvert a\rvert + \lvert b\rvert
-$$
-
-
-
-大部分带绝对值的证明都可以用到。例子见“做限制”
 
 ### 加一项减一项
 
@@ -145,10 +137,52 @@ $$
 a^x=(1+b)^x \ge (1+b^n) \ge nb \ge (x-1)b
 $$
 
+### （绝对值）三角不等式
+
+$$
+\lvert \lvert a \rvert - \lvert b\rvert \rvert \le \lvert a+b \rvert \le \lvert a\rvert + \lvert b\rvert
+$$
+
+
+
+大部分带绝对值的证明都可以用到。例子见“做限制”
+
+### 次数的调节
+
+与“无限”有关的极限求法离不开次数转化。在这里我们可以限制自变量和1的关系对指数直接操作。
+
+![image-20220922105812172](https://s2.loli.net/2022/09/22/Fry5swRuIhbvn3t.png)
 
 ## 定义的使用
 
+### 把定义写出来其实就差不多了
+
 ## 常见可用定理
+
+### 两边夹（三明治定理）
+
+![扫描全能王 2022-09-22 19.46_1](https://s2.loli.net/2022/09/22/WBuPCcd4oGpE67t.jpg)
+
+### 保号性
+
+在一个很小的delta内一定有同号的部分
+
+### 保序性
+
+$$
+f(x)\leq g(x) \Rightarrow \lim_{x \to c}f(x) \leq \lim_{x \to c} g(x)
+$$
+
+前提是定义域之类的条件全都要满足。
+
+### 外面连续里面有极限
+
+$$
+\text{在外面连续里面有极限时}
+\newline \lim_{x \to c}g(f(x))=g({\lim_{x \to c}f(x)})
+$$
+
+仅仅是内外都有极限的话，如果保证在delta范围内不取到c就可以了
 
 ## 小技巧
 

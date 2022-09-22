@@ -30,7 +30,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/example.org\/%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD\/"
-        },"genre": "posts","keywords": "数学, 极限, 整理","wordcount":  1480 ,
+        },"genre": "posts","keywords": "数学, 极限, 整理","wordcount":  1706 ,
         "url": "http:\/\/example.org\/%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD\/","datePublished": "2022-09-21T16:43:16+08:00","dateModified": "2022-09-21T16:43:16+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -104,8 +104,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">极限与连续</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="hzdy.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>AlexD.</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>数学笔记</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-21">2022-09-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1480 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-21">2022-09-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1706 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -118,7 +118,6 @@
         <li><a href="#处理次数的因式分解">处理次数的因式分解</a></li>
         <li><a href="#有理化">有理化</a></li>
         <li><a href="#拆分分子">拆分分子</a></li>
-        <li><a href="#绝对值三角不等式">（绝对值）三角不等式</a></li>
         <li><a href="#加一项减一项">加一项减一项</a></li>
       </ul>
     </li>
@@ -126,10 +125,23 @@
       <ul>
         <li><a href="#做限制">做限制</a></li>
         <li><a href="#二项式定理">二项式定理</a></li>
+        <li><a href="#绝对值三角不等式">（绝对值）三角不等式</a></li>
+        <li><a href="#次数的调节">次数的调节</a></li>
       </ul>
     </li>
-    <li><a href="#定义的使用">定义的使用</a></li>
-    <li><a href="#常见可用定理">常见可用定理</a></li>
+    <li><a href="#定义的使用">定义的使用</a>
+      <ul>
+        <li><a href="#把定义写出来其实就差不多了">把定义写出来其实就差不多了</a></li>
+      </ul>
+    </li>
+    <li><a href="#常见可用定理">常见可用定理</a>
+      <ul>
+        <li><a href="#两边夹三明治定理">两边夹（三明治定理）</a></li>
+        <li><a href="#保号性">保号性</a></li>
+        <li><a href="#保序性">保序性</a></li>
+        <li><a href="#外面连续里面有极限">外面连续里面有极限</a></li>
+      </ul>
+    </li>
     <li><a href="#小技巧">小技巧</a>
       <ul>
         <li><a href="#避免分母为0">避免分母为0</a></li>
@@ -194,6 +206,7 @@ $$
 a=a^{n\times \frac1n}=a^{2\times\frac12}
 $$
 前一部分可以用来抵消一些根号项，后一部分可以实现偶数次方的次方和因式分解。</p>
+<p>同时注意，这个公式逆用可以升次（root rule证明过程）</p>
 <h3 id="有理化">有理化</h3>
 <p>$$
 \frac{1}{\sqrt{a}+\sqrt{b}} = \frac{\sqrt{a}-\sqrt{b}}{a-b}
@@ -214,11 +227,6 @@ $$</p>
 \frac{a+b}{c} = \frac{a}{c}+\frac{b}{c}
 $$</p>
 <p>上面那一例“部分有理化也可以用这种方式解决（步骤多了几步，但是无伤大雅——自己最早想到的方法就是最好的）</p>
-<h3 id="绝对值三角不等式">（绝对值）三角不等式</h3>
-<p>$$
-\lvert \lvert a \rvert - \lvert b\rvert \rvert \le \lvert a+b \rvert \le \lvert a\rvert + \lvert b\rvert
-$$</p>
-<p>大部分带绝对值的证明都可以用到。例子见“做限制”</p>
 <h3 id="加一项减一项">加一项减一项</h3>
 <p>和定义、放缩一起使用，目标是把条件集中。例子见“做限制”</p>
 <h2 id="放缩">放缩</h2>
@@ -272,8 +280,46 @@ $$</p>
 $$
 a^x=(1+b)^x \ge (1+b^n) \ge nb \ge (x-1)b
 $$</p>
+<h3 id="绝对值三角不等式">（绝对值）三角不等式</h3>
+<p>$$
+\lvert \lvert a \rvert - \lvert b\rvert \rvert \le \lvert a+b \rvert \le \lvert a\rvert + \lvert b\rvert
+$$</p>
+<p>大部分带绝对值的证明都可以用到。例子见“做限制”</p>
+<h3 id="次数的调节">次数的调节</h3>
+<p>与“无限”有关的极限求法离不开次数转化。在这里我们可以限制自变量和1的关系对指数直接操作。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://s2.loli.net/2022/09/22/Fry5swRuIhbvn3t.png"
+        data-srcset="https://s2.loli.net/2022/09/22/Fry5swRuIhbvn3t.png, https://s2.loli.net/2022/09/22/Fry5swRuIhbvn3t.png 1.5x, https://s2.loli.net/2022/09/22/Fry5swRuIhbvn3t.png 2x"
+        data-sizes="auto"
+        alt="https://s2.loli.net/2022/09/22/Fry5swRuIhbvn3t.png"
+        title="image-20220922105812172" /></p>
 <h2 id="定义的使用">定义的使用</h2>
+<h3 id="把定义写出来其实就差不多了">把定义写出来其实就差不多了</h3>
 <h2 id="常见可用定理">常见可用定理</h2>
+<h3 id="两边夹三明治定理">两边夹（三明治定理）</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://s2.loli.net/2022/09/22/WBuPCcd4oGpE67t.jpg"
+        data-srcset="https://s2.loli.net/2022/09/22/WBuPCcd4oGpE67t.jpg, https://s2.loli.net/2022/09/22/WBuPCcd4oGpE67t.jpg 1.5x, https://s2.loli.net/2022/09/22/WBuPCcd4oGpE67t.jpg 2x"
+        data-sizes="auto"
+        alt="https://s2.loli.net/2022/09/22/WBuPCcd4oGpE67t.jpg"
+        title="扫描全能王 2022-09-22 19.46_1" /></p>
+<h3 id="保号性">保号性</h3>
+<p>在一个很小的delta内一定有同号的部分</p>
+<h3 id="保序性">保序性</h3>
+<p>$$
+f(x)\leq g(x) \Rightarrow \lim_{x \to c}f(x) \leq \lim_{x \to c} g(x)
+$$</p>
+<p>前提是定义域之类的条件全都要满足。</p>
+<h3 id="外面连续里面有极限">外面连续里面有极限</h3>
+<p>$$
+\text{在外面连续里面有极限时}
+\newline \lim_{x \to c}g(f(x))=g({\lim_{x \to c}f(x)})
+$$</p>
+<p>仅仅是内外都有极限的话，如果保证在delta范围内不取到c就可以了</p>
 <h2 id="小技巧">小技巧</h2>
 <h3 id="避免分母为0">避免分母为0</h3>
 <p>我们只要找一个必要条件。通过加一避免分母为0.在证明乘法法则中有使用到。
