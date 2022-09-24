@@ -184,6 +184,14 @@ $$
 
 仅仅是内外都有极限的话，如果保证在delta范围内不取到c就可以了
 
+### 连续的另一种理解
+
+$$
+f \text{ is continuous at c} \Leftrightarrow \lim_{h \to 0} f(c+h)-f(c) = 0
+$$
+
+
+
 ## 小技巧
 
 ### 避免分母为0
