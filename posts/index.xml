@@ -3,7 +3,15 @@
         <title>All Posts - Alex D.</title>
         <link>http://example.org/posts/</link>
         <description>All Posts | Alex D.</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 21 Sep 2022 16:43:16 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 07 Oct 2022 15:45:44 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>导数与微分</title>
+    <link>http://example.org/%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/</link>
+    <pubDate>Fri, 07 Oct 2022 15:45:44 &#43;0800</pubDate>
+    <author>Alex D.</author>
+    <guid>http://example.org/%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/</guid>
+    <description><![CDATA[导数和微分 基本概念 导数 $$ \left. \frac{\mathrm{d} y }{\mathrm{d} x} \right|{x=x{0}}=y&rsquo;(x_0)=\lim_{h \to 0}\frac{f(x_0+h)-f(x_0)}{h} $$ 单侧导数同理。 可导一定连续（相当于必然在该点有定义，是一个易忘的隐含条件） 微分需要稍微推一推。 微分]]></description>
+</item>
+<item>
     <title>极限与连续</title>
     <link>http://example.org/%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD/</link>
     <pubDate>Wed, 21 Sep 2022 16:43:16 &#43;0800</pubDate>
